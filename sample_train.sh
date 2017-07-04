@@ -1,0 +1,1 @@
+tail -n +2 data/train.txt | shuf -n 700000 -o data/sampled_train.txt && sed -i '1iid\tcontext\tresponse\thuman-generated\n' data/sampled_train.txt
